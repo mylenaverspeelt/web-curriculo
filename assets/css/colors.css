@@ -1,6 +1,7 @@
 :root{
     --dark-purple: #5E1675;
-    --light-purple: #d3d0e479;
+    --light-purple-transparent: #d3d0e479;
+    --light-purple: #d3d0e4;
     --white: #FFFFFF;
     --black: #000000;
     --yellow: #FFC700;

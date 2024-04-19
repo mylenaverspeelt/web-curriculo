@@ -64,15 +64,17 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: var(--black);
+  background: var(--light-purple);
   overflow-y: auto;
 }
 
 #header .profile img {
   margin: 15px auto;
   display: block;
-  width: 120px;
-  border: 8px solid var(--black);
+  width: 10rem;
+  height: 12rem;
+  box-shadow: 0 0 10px var(--dark-purple);
+
 }
 
 #header .profile h1 {
@@ -86,15 +88,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .profile h1 a, #header .profile h1 a:hover {
-  color: var(--white);
+  color: var(--black);
   text-decoration: none;
 }
 
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: var(--black);
-  color: var(--orange);
+  background: var(--dark-purple);
+  color: var(--white);
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -107,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .profile .social-links a:hover {
   background: var(--white);
-  color: var(--yellow);
+  color: var(--orange);
   text-decoration: none;
 }
 
@@ -143,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: flex;
   align-items: center;
-  color: #a8a9b4;
+  color: var(--dark-purple);
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -153,15 +155,15 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a i {
   font-size: 24px;
   padding-right: 8px;
-  color: #6f7180;
+  color: var(--dark-purple);
 }
 
-.nav-menu a:hover, .nav-menu .active>a, .nav-menu li:hover>a {
+.nav-menu a:hover, .nav-menu >a, .nav-menu li:hover>a {
   text-decoration: none;
-  color: var(--white);
+  color: var(--orange);
 }
 
-.nav-menu a:hover i, .nav-menu .active>a i, .nav-menu li:hover>a i {
+.nav-menu a:hover i, .nav-menu >a i, .nav-menu li:hover>a i {
   color: var(--orange);
 }
 
@@ -194,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: var(--white);
+  color: var(--black);
 }
 
 header {
@@ -478,7 +480,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid var(--light-purple);
+  border-left: 2px solid var(--light-purple-transparent);
   position: relative;
 }
 
@@ -1146,5 +1148,27 @@ section {
     position: static;
     width: auto;
     padding-right: 20px 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  #about, #skills, #resume, #work, #facts, #contact, #hero {
+    padding: 4rem 1rem;
+  }
+
+  #hero {
+    padding-left: 1rem;
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 }
