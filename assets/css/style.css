@@ -682,12 +682,8 @@ section {
 
 @media only screen and (max-width: 768px) {
 
-  #about, #skills, #resume, #work, #facts, #contact, #hero {
+  #about, #skills, #resume, #work, #facts, #contact {
     padding: 4rem 1rem;
-  }
-
-  #hero {
-    padding-left: 1rem;
   }
 
   .info-container {
