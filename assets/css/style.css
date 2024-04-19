@@ -116,10 +116,6 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
-#main {
-  margin-left: 300px;
-}
-
 @media (max-width: 1199px) {
   #header {
     left: -300px;
@@ -204,6 +200,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
+}
+
+header {
+  display: none;
+}
+
+header.header-visible {
+  display: block;
 }
 
 /*--------------------------------------------------------------
@@ -300,6 +304,17 @@ section {
   color: #173b6c;
 }
 
+
+.section-title-2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: white;
+}
+
+
 .section-title h2::after {
   content: '';
   position: absolute;
@@ -341,6 +356,10 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+.profile-image {
+  height: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -394,7 +413,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 50px;
@@ -431,19 +450,27 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+#resume {
+  background-color: #3A1C4B;
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: white;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid white;
   position: relative;
+}
+
+.change-color{
+color: white;
 }
 
 .resume .resume-item h4 {
@@ -452,7 +479,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: white;
   margin-bottom: 10px;
 }
 

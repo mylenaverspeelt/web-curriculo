@@ -185,3 +185,12 @@
   });
 
 })(jQuery);
+
+document.addEventListener('DOMContentLoaded', function () {
+  const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+  const header = document.querySelector('header');
+
+  mobileNavToggle.addEventListener('click', function () {
+      header.classList.toggle('header-visible');
+  });
+});
