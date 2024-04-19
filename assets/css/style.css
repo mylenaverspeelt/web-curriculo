@@ -315,7 +315,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #3A1C4B;
+  background: var(--dark-purple);
   bottom: 0;
   left: 0;
 
@@ -327,9 +327,10 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: white;
+  background: var(--white);
   bottom: 0;
   left: 0;
+  margin-bottom: 1.5rem;
 }
 
 .section-title p {
@@ -471,6 +472,8 @@ section {
   margin-bottom: 20px;
   color: white;
 }
+
+
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
