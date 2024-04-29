@@ -158,12 +158,12 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--dark-purple);
 }
 
-.nav-menu a:hover, .nav-menu >a, .nav-menu li:hover>a {
+.nav-menu a:hover, .nav-menu>a, .nav-menu li:hover>a {
   text-decoration: none;
   color: var(--orange);
 }
 
-.nav-menu a:hover i, .nav-menu >a i, .nav-menu li:hover>a i {
+.nav-menu a:hover i, .nav-menu>a i, .nav-menu li:hover>a i {
   color: var(--orange);
 }
 
@@ -372,6 +372,25 @@ section {
 
 .img-fluid {
   height: 80%;
+}
+
+/*--------------------------------------------------------------
+# Projects
+--------------------------------------------------------------*/
+
+.projects {
+  padding-bottom: 30px;
+  background: var(--light-purple-transparent);
+}
+
+.projects-div {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.projects-div>a {
+  cursor: pointer;
 }
 
 /*--------------------------------------------------------------
@@ -659,7 +678,7 @@ section {
   font-size: 14px;
   width: 100%;
   z-index: 9999;
-  background: var(--white);
+  background: var(--light-purple-transparent);
 }
 
 #footer .copyright {
@@ -699,11 +718,12 @@ section {
   }
 }
 
-#facts, #skills{
-  background-color: #f0f0f0; 
-  background-image: 
+#facts, #skills {
+  background-color: #f0f0f0;
+  background-image:
     linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%),
     linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%),
     linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.2) 75%),
     linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.2) 75%);
-  background-size: 20px 20px;}
+  background-size: 20px 20px;
+}
