@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -71,6 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 .social-links {
   font-size: 3rem;
 }
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -275,6 +277,7 @@ section {
   padding: 0 0 20px 20px;
   border-left: 2px solid var(--light-purple-transparent);
   position: relative;
+  width: 100%;
 }
 
 .change-color {
@@ -336,7 +339,6 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  padding-bottom: 130px;
   background-color: #3A1C4B;
 }
 
@@ -344,18 +346,11 @@ section {
   cursor: pointer;
 }
 
-.info-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 1rem;
-}
-
 .contact .info {
-  padding: 30px;
   background: var(--white);
-  width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  display: flex;
+  padding: 2rem 0;
 }
 
 .contact .info i {
@@ -448,7 +443,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  padding: 15px;
+  padding: 15px 0;
   color: var(--dark-purple);
   font-size: 14px;
   width: 100%;
@@ -476,7 +471,7 @@ section {
   }
 
 
-  #skills>.container, #projects>.container, .header-container{
+  #skills>.container, #projects>.container, .header-container {
     flex-wrap: wrap;
   }
 
@@ -504,6 +499,18 @@ section {
   .info-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .contact-button{
+    margin: 0 2rem;
   }
 }
 
