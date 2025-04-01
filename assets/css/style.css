@@ -1,4 +1,4 @@
-@import url('./colors.css');
+@import url("./colors.css");
 
 /*--------------------------------------------------------------
 # General
@@ -18,10 +18,14 @@ a:hover {
   text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Raleway", sans-serif;
 }
-
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -111,7 +115,6 @@ section {
   position: relative;
 }
 
-
 .section-title-2 {
   font-size: 32px;
   font-weight: bold;
@@ -121,9 +124,8 @@ section {
   color: white;
 }
 
-
 .section-title h2::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 50px;
@@ -131,11 +133,10 @@ section {
   background: var(--dark-purple);
   bottom: 0;
   left: 0;
-
 }
 
 .section-title-2 h2::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 50px;
@@ -191,7 +192,7 @@ section {
   background: var(--light-purple-transparent);
 }
 
-#projects>.container {
+#projects > .container {
   display: flex;
   align-items: center;
 }
@@ -202,7 +203,7 @@ section {
   padding: 1rem 0;
 }
 
-.projects-div>a {
+.projects-div > a {
   cursor: pointer;
 }
 
@@ -266,7 +267,7 @@ section {
 # Skills
 --------------------------------------------------------------*/
 
-#skills>.container {
+#skills > .container {
   display: flex;
   align-items: end;
 }
@@ -275,7 +276,7 @@ section {
 # Resume
 --------------------------------------------------------------*/
 #resume {
-  background-color: #3A1C4B;
+  background-color: #3a1c4b;
 }
 
 .resume .resume-title {
@@ -352,7 +353,7 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  background-color: #3A1C4B;
+  background-color: #3a1c4b;
 }
 
 .contact-button {
@@ -419,7 +420,9 @@ section {
   color: var(--white);
 }
 
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
   background: var(--orange);
   color: var(--white);
   display: flex;
@@ -451,7 +454,6 @@ section {
   }
 }
 
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -475,20 +477,19 @@ section {
   color: var(--dark-purple);
 }
 
-
 @media only screen and (max-width: 768px) {
-
   img {
     height: 200px;
     width: 200px;
   }
 
-
-  #skills>.container, #projects>.container, .header-container {
+  #skills > .container,
+  #projects > .container,
+  .header-container {
     flex-wrap: wrap;
   }
 
-  .header-container>div>h1 {
+  .header-container > div > h1 {
     font-size: 3rem;
   }
 
@@ -502,37 +503,60 @@ section {
     width: 100%;
   }
 
-  .skills-image, .project-image, .profile-image {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .info-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .container {
-    padding: 0 2rem;
-  }
-
-  .info {
-    flex-direction: column;
-  }
-
-  .contact-button {
-    margin: 0 2rem;
-  }
+.skills-image {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#projects, #header {
+.skills-content-text {
+  width: 70%;
+}
+
+.skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.project-image,
+.profile-image {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+.info {
+  flex-direction: column;
+}
+
+.contact-button {
+  margin: 0 2rem;
+}
+
+#projects,
+#header {
   background-color: var(--light-purple-transparent);
-  background-image:
-    linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%),
+  background-image: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.2) 25%,
+      transparent 25%
+    ),
     linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%),
     linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.2) 75%),
     linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.2) 75%);
   background-size: 20px 20px;
+}
 }
